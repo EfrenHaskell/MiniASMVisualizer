@@ -1,0 +1,9 @@
+load r1, =1
+load r2, =50
+load r3, =4
+load r4, =180
+label: bgt r1, r2, label1
+	store r1, $r4
+	inc r1
+	add r4, r3
+label1: halt
